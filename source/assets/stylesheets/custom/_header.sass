@@ -1,0 +1,112 @@
+header
+  width: 100%
+  +position(fixed, 0 null null null)
+  z-index: 100
+.logo__inner
+  margin: 20px auto
+  max-width: 150px
+
+
+.header__right
+  float: right
+  +clearfix
+  +at-breakpoint(lap)
+    float: left
+
+.header__items
+  width: 130px
+  display: none
+  background-color: black
+  margin-left: -.5rem
+  +position(absolute, 80px 24px null null)
+  // box-shadow: 0 3px 10px rgba($base-body-color, 0.3)
+  flex-direction: column
+  flex-wrap: nowrap
+  justify-content: space-between
+  align-items: center
+  +vertical-padding(1)
+  text-align: center
+  z-index: 10
+
+  &:before
+    content: ""
+    +triangle(16px, black, up)
+    +position(absolute, -8px 14px null null)
+    margin-left: -10px
+    +at-breakpoint(tab)
+      display: none
+
+  &.is-open
+    display: flex
+    align-items: flex-end
+    +horizontal-padding(1)
+    color: white
+
+  +at-breakpoint(tab)
+    display: flex
+    +position(relative, 0 null null null)
+    margin: 0
+    width: 100%
+    box-shadow: none
+    +vertical-padding(0)
+    flex-direction: row
+    flex-wrap: nowrap
+    align-items: center
+    background-color: transparent
+
+
+.header__hamburger
+  float: left
+  +clearfix
+  .div
+    +margin-top(.5)
+    background: black
+    height: 2px
+    width: 18px
+    position: relative
+
+  +at-breakpoint(tab)
+    display: none
+
+.menu
+  margin-right: .4rem
+  margin-top: .4rem
+  color: black
+  float: left
+  +clearfix
+
+  +at-breakpoint(tab)
+    display: none
+
+.header__item
+  +vertical-padding(1.5)
+
+  +at-breakpoint(tab)
+    +vertical-padding(0)
+    +margin-right(1)
+
+  +at-breakpoint(lap)
+    +margin-right(2)
+
+  +at-breakpoint(tab)
+    &:last-child
+      +margin-right(2)
+
+  +at-breakpoint(lap)
+    &:last-child
+      +margin-right(4)
+
+a.header__item
+  color: white
+  text-decoration: none
+  +font-size(delta)
+  font-weight: 300
+
+  +at-breakpoint(tab)
+    color: black
+    border-bottom: 1px solid rgba(255, 255, 255, 0)
+    transition: all 500ms ease
+    width: 100px
+
+    &:hover
+      border-bottom: 1px solid rgba(255, 255, 255, 1)

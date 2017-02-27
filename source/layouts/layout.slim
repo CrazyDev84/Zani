@@ -2,5 +2,9 @@ doctype html
 html
   head= partial "partials/head"
   body
+    header
+      = partial "partials/header"
     = yield
+    footer
+      = partial "partials/footer"
     = javascript_include_tag :application

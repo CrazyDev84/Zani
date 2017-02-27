@@ -1,0 +1,20 @@
+.wrap--on-eq-palm
+  .grid--narrow
+    .grid__item.width-5-12.lap-2-12
+      .logo__inner
+        a.header__logo href="/" 
+          img src="dist/images/logo-zani.svg"
+
+    .grid__item.width-7-12.lap-6-12
+      .header__right.space--both-3.align--right
+        .menu
+          | MENU      
+        .header__hamburger
+          .div
+          .div
+          .div
+        .header__items
+          = link_to 'About', '/index.html', class: "header__item"
+          = link_to 'Product', '/index.html', class: "header__item"
+          = link_to 'Distribution', '/index.html', class: "header__item"
+          = link_to 'Contact', '/index.html', class: "header__item"          

@@ -1,0 +1,40 @@
+.hero
+  @extend .hero
+  height: 100vh
+  background-color: transparent
+
+  &.is-no-top-padding
+    +padding-top(0)
+
+  &.is-no-bottom-padding
+    +padding-bottom(0)
+    
+  &.is-narrow
+    +at-breakpoint(lap)
+      width: 66%
+
+.hero__body
+  @extend .hero__body
+
+.hero__body__inner
+  @extend .hero__body__inner
+  padding-left: 240px
+
+.hero__heading
+  @extend .hero__heading
+  width: 100%
+  max-width: 100%
+  text-align: left
+  +padding-bottom(1)
+  color: black
+  font-family: $heading-font-family
+  font-weight: normal
+  text-transform: uppercase
+  // margin: 0
+  +font-size(gamma)
+  +at-breakpoint(lap)
+    +font-size(alpha)
+
+.hero__text
+  font-weight: $body-font-weight
+  text-align: left

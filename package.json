@@ -1,8 +1,8 @@
 {
-  "name": "midgulp",
+  "name": "Paola Zani",
   "version": "1.2.0",
-  "description": "A Middleman template using Slim, Gulp, Babel and Bemo",
-  "author": "Matteo Scurati",
+  "description": "Paola Zani",
+  "author": "Giovanni Arnone",
   "license": "MIT",
   "browser": {
     "modernizr": "./source/assets/javascripts/vendor/modernizr.js",
