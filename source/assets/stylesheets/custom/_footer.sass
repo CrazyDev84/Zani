@@ -1,7 +1,13 @@
 footer
   +position(fixed, null null 0 null)
-  width: 100%
+  width: 50%
   height: 30px
+  background-color: white
+  z-index: 100
+  +padding-top(1)
+  +at-breakpoint(lap)
+    width: 50%
+  
   p
     +font-size(smallprint)
     font-weight: 300

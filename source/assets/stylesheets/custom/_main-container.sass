@@ -1,0 +1,41 @@
+.container__inner
+  margin: 0 auto
+  padding: 0
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  overflow: hidden
+  width: 100%
+  height: auto
+  text-align: left
+  float: none
+.container__scrollbar
+  overflow: scroll
+  width: 100%
+  padding-right: 20px
+  padding-bottom: 20px
+  background-color: $white
+  +at-breakpoint(lap)
+    height: 100vh
+
+.box__text
+
+
+.container__left
+  +position(relative, 0 null null 0)
+  width: 100%
+  z-index: 1
+  overflow: hidden
+  +at-breakpoint(lap)
+    +position(absolute, 0 null null 0)
+    width: 50%
+    
+
+.container__right
+  +position(relative, 0 0 null null )
+  width: 98%
+  z-index: 110
+  overflow: hidden
+  +at-breakpoint(lap)
+    +position(absolute, 0 0 null null )
+    width: 48%
